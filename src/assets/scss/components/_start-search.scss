@@ -24,22 +24,14 @@
 }
 
 .tag {
-	.dropdown-content li {
-		padding: .75rem;
-		span {
-			padding: .3rem;
-			background-color: red;
-			color: white;
-			border-radius: 8px;
-			display: inline-block;
-		}
-	}
-	.dropdown-content li:hover, 
-	.dropdown-content li.active, 
-	.dropdown-content li.selected {
-		
-	}
 }
+
+// select#tag option[value="Option 1"] {
+// 	padding: .3rem;
+// 	border-radius: 8px;
+// 	display: inline-block;
+// 	background-color: black;
+// }
 
 .ss-bottom {
 	display: flex;

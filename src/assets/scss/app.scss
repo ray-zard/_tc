@@ -6,7 +6,8 @@
 @import "components/color";
 
 // Variables;
-@import "components/variables";
+// @import "components/variables";
+@import "components/main-variables";
 
 // Reset
 @import "components/normalize";
@@ -17,7 +18,7 @@
 @import "components/icons-material-design";
 @import "components/grid";
 @import "components/navbar";
-@import "components/roboto";
+// @import "components/roboto";
 @import "components/typography";
 @import "components/transitions";
 @import "components/cards";
@@ -45,3 +46,15 @@
 
 // Add custom css
 @import "custom";
+
+@import "components/main-variables";
+
+@import "components/nav";
+@import "components/input";
+@import "components/search";
+@import "components/val-search";
+@import "components/footer";
+@import "components/profile";
+@import "components/start-search";
+@import "components/bxsslider";
+@import "components/login-page";
