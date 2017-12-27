@@ -1,0 +1,58 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8080
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"  
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "!src/assets/{img,js,scss}/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - "bower_components/bourbon/app/assets/stylesheets"
+    - "bower_components/materialize/sass"
+  # Paths to JavaScript libraries, which are compined into one file
+  javascript:
+    # Libraries requried by Foundation
+    - "node_modules/jquery/dist/jquery.js"
+    # Individual Mterialize components
+    # If you aren't using a component, just remove it from the list
+    - "node_modules/materialize-css/js/velocity.min.js"
+    - "node_modules/materialize-css/js/animation.js"
+    - "node_modules/materialize-css/js/buttons.js"
+    - "node_modules/materialize-css/js/cards.js"
+    - "node_modules/materialize-css/js/carousel.js"
+    - "node_modules/materialize-css/js/character_counter.js"
+    - "node_modules/materialize-css/js/chips.js"
+    - "node_modules/materialize-css/js/collapsible.js"
+    - "node_modules/materialize-css/js/dropdown.js"
+    - "node_modules/materialize-css/js/forms.js"
+    - "node_modules/materialize-css/js/global.js"
+    - "node_modules/materialize-css/js/hammer.min.js"
+    - "node_modules/materialize-css/js/initial.js"
+    - "node_modules/materialize-css/js/jquery.easing.1.4.js"
+    - "node_modules/materialize-css/js/jquery.hammer.js"
+    - "node_modules/materialize-css/js/materialbox.js"
+    - "node_modules/materialize-css/js/modal.js"
+    - "node_modules/materialize-css/js/parallax.js"
+    - "node_modules/materialize-css/js/pushpin.js"
+    - "node_modules/materialize-css/js/scrollFire.js"
+    - "node_modules/materialize-css/js/scrollspy.js"
+    - "node_modules/materialize-css/js/sideNav.js"
+    - "node_modules/materialize-css/js/slider.js"
+    - "node_modules/materialize-css/js/tabs.js"
+    - "node_modules/materialize-css/js/tapTarget.js"
+    - "node_modules/materialize-css/js/toasts.js"
+    - "node_modules/materialize-css/js/tooltip.js"
+    - "node_modules/materialize-css/js/transitions.js"
+    - "node_modules/materialize-css/js/waves.js"
+    # Paths to your own project code are here
+    # - "src/assets/js/!(app).js"
+    - "src/assets/js/app.js"

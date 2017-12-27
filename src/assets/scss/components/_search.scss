@@ -1,0 +1,74 @@
+.search {
+	
+	.search-btn {
+		background-color: inherit;
+		border: inherit;
+		padding: .9rem 1rem;
+		width: 100%;
+		border-radius: 2px;
+		text-transform: uppercase;
+	}
+
+	.input-field {
+		margin-top: 0.75rem;
+	}
+	.start-search-input.input-field {
+		margin: 0;
+		input {
+			margin: 0;
+		}
+	}
+	input,
+	.select-wrapper input.select-dropdown {
+		margin-bottom: 0.75rem;
+	}
+}
+
+.search-subbar {
+
+	.right {
+		text-align: right;
+	}
+	
+	.ss-name {
+		color: #78909c;
+	}
+	
+	.ss-val {
+		color: #455a64;
+	}
+	
+	.ss-block {
+		display: inline-block;
+		&:first-child {
+			margin-right: .75rem;
+		}
+	}
+	
+	.select-wrapper {
+		display: inline-block;
+		
+		span.caret {
+		}
+		
+		.select-dropdown {
+			color: #455a64;
+			margin: 0;
+			width: auto;
+			border: none;
+			height: auto;
+			line-height: inherit;
+			padding-right: 12px;
+		}
+
+		.dropdown-content.select-dropdown {
+			padding: 0;
+		}
+	}
+}
+
+.waves-effect.waves-light-green .waves-ripple {
+	/* The alpha value allows the text and background color
+	of the button to still show through. */
+	 background-color: rgba(139, 195, 74, 0.65);
+ }

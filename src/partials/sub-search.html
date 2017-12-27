@@ -1,0 +1,64 @@
+<div class="container">
+	<form class="row search z-depth-1 white">
+
+		<div class="input-field col m6">
+			<input value="" id="" type="text" class="validate" placeholder="Ваш запрос">
+		</div>
+
+		<div class="input-field col m2">
+			<select multiple>
+				<option value="" disabled selected>Тег</option>
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+			</select>
+		</div>
+
+		<div class="input-field col m3">
+			<select multiple>
+				<option value="" disabled selected>Выбор трекера</option>
+				<option value="1">Ruor</option>
+				<option value="2">Rutracker</option>
+				<option value="3">PirateBay</option>
+			</select>
+		</div>
+
+		<div class="input-field col m1">
+			<button class="search-btn waves-effect waves-light-green light-green-text" type="submit" name="action">
+				Поиск
+			</button>
+		</div>
+
+	</form>
+
+	<div class="row search-subbar">
+		<div class="col s12 m4">
+			<span class="ss-name">Найдено результатов: </span>
+			<span class="ss-val">364</span>
+		</div>
+		<div class="right col s12 m8">
+			<div class="ss-block">
+				<span class="ss-name">Сортировать: </span>
+				<select>
+					<option class="ss-val">По колличеству сидов</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+			</div>
+			<div class="ss-block">
+				<span class="ss-name">Показывать: </span>
+				<select>
+					<option class="ss-val">по 10 результатов</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+			</div>
+			
+		</div>
+	</div>
+
+	{{> val-search}}
+
+</div>

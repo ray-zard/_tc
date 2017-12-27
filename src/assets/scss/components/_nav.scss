@@ -1,0 +1,31 @@
+nav {
+	margin-bottom: 4rem;
+	.brand-logo {
+		position: relative;
+		margin: 0 1rem;
+	}
+
+	ul {
+		li {
+		}
+		.material-icons.right {
+			margin-left: 0;
+		}
+		.right.dropdown-button {
+			padding-right: 8px;
+		}
+		a {
+			position: relative;
+			text-transform: uppercase;
+			&.active-page::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				left: 0;
+
+				border-bottom: 3px solid #8bc34a;
+			}
+		}
+	}
+}
