@@ -1,5 +1,5 @@
 {
-  "name": "tc",
+  "name": "_tc",
   "version": "0.0.1",
   "description": "Materialize for With Gulp.",
   "main": "gulpfile.js",
