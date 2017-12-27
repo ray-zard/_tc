@@ -40,6 +40,7 @@
   },
   "private": true,
   "dependencies": {
+    "bxslider": "^4.2.13",
     "jquery": "^3.2.1",
     "materialize-css": "^0.100.2"
   }

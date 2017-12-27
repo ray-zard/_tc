@@ -1,0 +1,85 @@
+.slider {
+	i {
+		font-size: 7rem;
+		margin-top: 2rem;
+	}
+	h1 {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 0;
+		margin-top: 1rem;
+	}
+	p {
+		max-width: 28rem;
+		float: right;
+	}
+
+
+}
+
+.slider-column {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		right: -6vw;
+		border-right: 1px solid #455a64;
+	}
+}
+
+.bx-wrapper {
+	box-shadow: inherit;
+	border: none;
+	background: inherit;
+	text-align: right;
+	.bx-pager {
+		text-align: right;
+		bottom: -1rem;
+	}
+}
+
+.bx-prev,
+.bx-next {
+	display: none;
+}
+
+.login {
+	&.login-reg {
+		display: none;
+	}
+	.login-header {
+		font-size: 1.4rem;
+		text-align: left;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 2rem;
+	}
+	.validate {
+		color: white;
+	}
+	button {
+		color: #9e9e9e;
+    margin-right: 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+		text-transform: uppercase;
+		background-color: inherit;
+		border: inherit;
+		
+		&.login-entr {
+			color: #8bc34a;
+		}
+	}
+	.login-btn-block {
+		text-align: right;
+
+		&.grey-text {
+			text-align: left;
+			margin-top: 2rem;
+		}
+	}
+}
