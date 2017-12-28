@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   $('form.val-body :checkbox').change(function(e) {
 
-    if ($('input:checked').length > 1) {
+    if ($('input:checked').length > 0) {
       $('.val-f-btn').addClass('active');
     } else {
       $('.val-f-btn').removeClass('active');
