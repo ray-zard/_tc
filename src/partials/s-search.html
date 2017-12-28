@@ -22,19 +22,70 @@
 			<div class="ss-block">
 				<span class="ss-name">Размер файла: </span>
 				<select multiple>
-					<option class="ss-val"disabled selected>Любое</option>
+					<option class="ss-val" disabled selected>Любое</option>
 					<option>Option 1</option>
 					<option>Option 2</option>
 					<option>Option 3</option>
 				</select>
 			</div>
 			<div class="ss-block tag">
-				<select id="tag" multiple>
-					<option class="ss-val" value="" disabled selected><span>Выбор разширения</span></option>
-					<option value="">Option 1</option>
-					<option value="">Option 2</option>
-					<option value="">Option 3</option>
-				</select>
+				<div class="input-dropper" data-activates='dropdown-dropper'>
+					<span class="caret">
+						<i class="material-icons dp48">arrow_drop_down</i>
+					</span>
+					<span class="input-dropper-valuelue">Рвзрешение файлов</span>
+				</div>
+
+				<ul id='dropdown-dropper' class='dropdown-content'>
+					<li>
+						<p>
+							<input type="checkbox" id="red" />
+							<label for="red">
+								<span class="dd-span red white-text">Red</span>
+							</label>
+						</p>
+					</li>
+					<li>
+						<p>
+							<input type="checkbox" id="blue" />
+							<label for="blue">
+								<span class="dd-span blue white-text">Blue</span>
+							</label>
+						</p>
+					</li>
+					<li>
+						<p>
+							<input type="checkbox" id="grey" />
+							<label for="grey">
+								<span class="dd-span grey white-text">Gray</span>
+							</label>
+						</p>
+					</li>
+					<li>
+						<p>
+							<input type="checkbox" id="pink" />
+							<label for="pink">
+								<span class="dd-span pink white-text">Pink</span>
+							</label>
+						</p>
+					</li>
+					<li>
+						<p>
+							<input type="checkbox" id="purple" />
+							<label for="purple">
+								<span class="dd-span purple white-text">Purple</span>
+							</label>
+						</p>
+					</li>
+					<li>
+						<p>
+							<input type="checkbox" id="lime" />
+							<label for="lime">
+								<span class="dd-span lime white-text">Lime</span>
+							</label>
+						</p>
+					</li>
+				</ul>
 			</div>
 			<div class="ss-block">
 				<span class="ss-name">Выбор трекера: </span>

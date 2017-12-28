@@ -9,12 +9,13 @@ input[value] {
   }
 }
 
-.input-gropper {
+.input-dropper {
 
   position: relative;
   
-  .input-gropper-valuelue {
+  .input-dropper-valuelue {
     
+    overflow: hidden;
     position: relative;
     cursor: pointer;
     background-color: transparent;
@@ -29,6 +30,12 @@ input[value] {
     padding: 0;
     display: block;
     margin-bottom: 0.75rem;
+
+    .dd-span {
+
+      padding: .3rem .6rem;
+      border-radius: 13px;
+    }
   }
   
   .caret {
@@ -66,5 +73,18 @@ input[value] {
 
     padding: .3rem .6rem;
     border-radius: 13px;
+  }
+}
+
+.tag {
+
+  width: 200px;
+  .input-dropper-valuelue {
+    margin: 0;
+    border: none;
+    height: auto;
+    display: inline;
+    line-height: 1;
+    color: #455a64;
   }
 }
