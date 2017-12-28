@@ -2,3 +2,69 @@ input[placeholder],
 input[value] {
   padding-left: 0.75rem;
 }
+
+.select-wrapper span.caret {
+  i {
+    line-height: .5;
+  }
+}
+
+.input-gropper {
+
+  position: relative;
+  
+  .input-gropper-valuelue {
+    
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    outline: none;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  
+  .caret {
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 10px;
+    margin: auto 0;
+    font-size: 10px;
+    line-height: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    
+    i {
+      line-height: .5;
+    }
+  }
+}
+
+#dropdown-dropper {
+
+  li {
+    padding: .5rem;
+    p {
+      padding: .5rem;
+      margin: 0;
+      label {
+
+      }
+    }
+  }
+  
+  .dd-span {
+
+    padding: .3rem .6rem;
+    border-radius: 13px;
+  }
+}
