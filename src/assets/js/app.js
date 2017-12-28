@@ -13,6 +13,35 @@ $(document).ready(function() {
     $('.login').css('display', 'none');
     $('.login.login-reg').css('display', 'block');
   });
+
+  $('.val-link').click(function() {
+    if ($(this).parent().siblings().is('.val-body')) {
+      $(this).toggleClass('active');
+      $(this).parent().siblings('.val-body').toggle();
+    } else {
+      $(this).removeClass('active');
+    }
+  });
+
+
+  $('form.val-body :checkbox').change(function(e) {
+
+    if ($('input:checked').length > 1) {
+      $('.val-f-btn').addClass('active');
+    } else {
+      $('.val-f-btn').removeClass('active');
+    }
+
+  });
+
+  $('.val-i-drop').click(function() {
+    if ($(this).parent().siblings().is('.val-sublist')) {
+      $(this).toggleClass('active');
+      $(this).parent().siblings('.val-sublist').toggle();
+    } else {
+      $(this).removeClass('active');
+    }
+  })
   
 });
 
