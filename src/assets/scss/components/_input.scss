@@ -1,8 +1,3 @@
-input[placeholder],
-input[value] {
-  padding-left: 0.75rem;
-}
-
 .select-wrapper span.caret {
   i {
     line-height: .5;
@@ -12,6 +7,9 @@ input[value] {
 .input-dropper {
 
   position: relative;
+  text-align: left;
+  cursor: pointer;
+  padding-right: 1rem;
   
   .input-dropper-valuelue {
     
@@ -32,9 +30,25 @@ input[value] {
     margin-bottom: 0.75rem;
 
     .dd-span {
-
+      position: relative;
       padding: .3rem .6rem;
       border-radius: 13px;
+      margin-right: .3rem;
+
+      &::after {
+        position: absolute;
+        content: ",";
+        @extend .blue-grey-text;
+        bottom: 3px;
+        right: -5px;
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      
     }
   }
   
@@ -78,7 +92,7 @@ input[value] {
 
 .tag {
 
-  width: 200px;
+  min-width: 165px;
   .input-dropper-valuelue {
     margin: 0;
     border: none;

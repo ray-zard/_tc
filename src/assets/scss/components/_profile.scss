@@ -9,12 +9,32 @@
 	.profile-block {
 		border-radius: 2px;
 		margin-bottom: 2rem;
-		
+	}
+	
+	.profile-block-col {
+		position: relative;
+		flex: 0 1 auto;
+		width: 100%;
+
+		&:first-child {
+			margin-right: 1rem;
+			&::after {
+				position: absolute;
+				content: "";
+				height: 100%;
+				width: 2px;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				@extend .blue-grey, .lighten-1;
+			}
+		}
 	}
 	
 	.info {
 		padding: 1rem;
 		margin-bottom: 2rem;
+		display: flex;
 		.row {
 			margin: 0;
 		}

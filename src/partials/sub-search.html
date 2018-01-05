@@ -1,17 +1,17 @@
 <div class="container">
 	<form class="row search z-depth-1 white">
 
-		<div class="input-field col m6">
+		<div class="search-input input-field">
 			<input value="" id="" type="text" class="validate" placeholder="Ваш запрос">
 		</div>
 
-		<div class="input-field col m2">
+		<div class="input-field">
 
 			<div class="input-dropper" data-activates='dropdown-dropper'>
 				<span class="caret">
 					<i class="material-icons dp48">arrow_drop_down</i>
 				</span>
-				<span class="input-dropper-valuelue">Рвзрешение файлов</span>
+				<span class="input-dropper-valuelue">Разрешение файлов</span>
 			</div>
 
 			<ul id='dropdown-dropper' class='dropdown-content'>
@@ -55,7 +55,7 @@
 
 		</div>
 
-		<div class="input-field col m3">
+		<div id="trakerVal" class="input-field">
 			<select multiple>
 				<option value="" disabled selected>Выбор трекера</option>
 				<option value="1">Ruor</option>
@@ -64,7 +64,7 @@
 			</select>
 		</div>
 
-		<div class="input-field col m1">
+		<div class="search-input-btn">
 			<button class="search-btn waves-effect waves-light-green light-green-text" type="submit" name="action">
 				Поиск
 			</button>
@@ -72,16 +72,16 @@
 
 	</form>
 
-	<div class="row search-subbar">
-		<div class="col s12 m4">
+	<form class="row search-subbar">
+		<div class="left col s12 m4">
 			<span class="ss-name">Найдено результатов: </span>
-			<span class="ss-val">364</span>
+			<span>364</span>
 		</div>
 		<div class="right col s12 m8">
 			<div class="ss-block">
 				<span class="ss-name">Сортировать: </span>
 				<select>
-					<option class="ss-val">По колличеству сидов</option>
+					<option>По колличеству сидов</option>
 					<option>Option 1</option>
 					<option>Option 2</option>
 					<option>Option 3</option>
@@ -90,15 +90,14 @@
 			<div class="ss-block">
 				<span class="ss-name">Показывать: </span>
 				<select>
-					<option class="ss-val">по 10 результатов</option>
+					<option>по 10 результатов</option>
 					<option>Option 1</option>
 					<option>Option 2</option>
 					<option>Option 3</option>
 				</select>
 			</div>
-
 		</div>
-	</div>
+	</form>
 
 	{{> val-search}}
 

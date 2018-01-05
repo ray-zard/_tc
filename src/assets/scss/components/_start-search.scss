@@ -16,7 +16,7 @@
 
 .ss-top {
 	.search-subbar {
-		margin-bottom: 1.6rem;
+		margin-bottom: .6rem;
 	}
 	.ss-block {
 		margin-right: .75rem;
@@ -35,16 +35,37 @@
 
 .ss-bottom {
 	display: flex;
+	flex-wrap: nowrap;
 	width: 100%;
 
 	.start-search {
 		margin: 0;
 		margin-right: 2rem;
+		flex: 1 1 auto;
+
+		@media screen and (max-width: 768px) {
+			margin-right: 1rem;
+		}
 	}
 	
 	.btn {
+		flex: 0 1 auto;
 		height: auto;
-		min-width: 300px;
+		min-width: 254px;
+
+		i {
+			display: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			min-width: auto;
+			i {
+				display: block;
+			}
+			span {
+				display: none;
+			}
+		}
 	}
 }
 
