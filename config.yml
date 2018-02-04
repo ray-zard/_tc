@@ -58,6 +58,7 @@ PATHS:
     - "node_modules/materialize-css/js/transitions.js"
     - "node_modules/materialize-css/js/waves.js"
     - "node_modules/bxslider/dist/jquery.bxslider.min.js"
+    - "src/assets/js/input_dropper.js"
     # Paths to your own project code are here
     # - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

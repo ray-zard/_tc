@@ -8,37 +8,43 @@ $(document).ready(function() {
   $("[data-tooltip]").tooltip({
     delay: 50
   });
+
   $(".slider").bxSlider();
 
-  $(".input-dropper").dropdown();
-
-  $("#dropdown-dropper :checkbox").change(function() {
-
-    var valDropper = $("#dropdown-dropper :checkbox:checked")
-      .siblings()
-      .map(function() {
-        return $(this).html();
-      });
-
-    if ($(this).is(":checked") || $(this).attr("checked", false)) {
-
-      $(".input-dropper span.input-dropper-valuelue").empty();
-
-      $.each(valDropper, function() {
-        $(".input-dropper span.input-dropper-valuelue").append(this);
-      });
-    }
-    
-    if (valDropper.length == 0) {
-      $(".input-dropper span.input-dropper-valuelue").text("Рвзрешение файлов");
-    }
-
-    // console.log(
-    //   $("#dropdown-dropper input:checkbox:checked").siblings().map(function() {
-    //       return $(this).html();
-    //     }).get()
-    // );
+  $(".input-dropper").dropdown({
+    constrainWidth: false,
+    alignment: 'right'
   });
+
+  $('.dropdown-content').inputDropper();
+
+  // $("#dropdown-dropper :checkbox").change(function() {
+
+  //   var valDropper = $("#dropdown-dropper :checkbox:checked")
+  //     .siblings()
+  //     .map(function() {
+  //       return $(this).html();
+  //     });
+
+  //   if ($(this).is(":checked") || $(this).attr("checked", false)) {
+
+  //     $(".input-dropper span.input-dropper-valuelue").empty();
+
+  //     $.each(valDropper, function() {
+  //       $(".input-dropper span.input-dropper-valuelue").append(this);
+  //     });
+  //   }
+    
+  //   if (valDropper.length == 0) {
+  //     $(".input-dropper span.input-dropper-valuelue").text("Поиск по всем");
+  //   }
+
+  //   // console.log(
+  //   //   $("#dropdown-dropper input:checkbox:checked").siblings().map(function() {
+  //   //       return $(this).html();
+  //   //     }).get()
+  //   // );
+  // });
 
   $(".input-dropper + .dropdown-content").on("click", function(e) {
     e.stopPropagation();
@@ -102,7 +108,8 @@ $(document).ready(function() {
       $('.ss-select .select-dropdown, #trakerVal .select-dropdown').keyup(resizeInput).each(resizeInput);
     }
 
-  })
+  });
+
 });
 
 // $(document).Materialize();

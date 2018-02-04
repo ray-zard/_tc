@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="right search-subbar">
-			<div class="ss-block ss-select">
+			<!-- <div class="ss-block ss-select">
 				<span class="ss-name">Размер файла: </span>
 				<select multiple>
 					<option class="ss-val" disabled selected>Любое</option>
@@ -27,16 +27,19 @@
 					<option>Option 2</option>
 					<option>Option 3</option>
 				</select>
-			</div>
+			</div> -->
+
 			<div class="ss-block tag">
+				
+				<span class="ss-name">Добавить тег:</span>
 				<div class="input-dropper" data-activates='dropdown-dropper'>
 					<span class="caret">
 						<i class="material-icons dp48">arrow_drop_down</i>
 					</span>
-					<span class="input-dropper-valuelue">Рвзрешение файлов</span>
+					<span class="input-dropper-valuelue" data-val-def="Поиск по всем">Поиск по всем</span>
 				</div>
 
-				<ul id='dropdown-dropper' class='dropdown-content'>
+				<!-- <ul id='dropdown-dropper' class='dropdown-content'>
 					<li>
 						<p>
 							<input type="checkbox" id="red" />
@@ -85,17 +88,144 @@
 							</label>
 						</p>
 					</li>
+				</ul> -->
+
+				<ul id="dropdown-dropper" class="dropdown-content">
+					<li>
+						<input type="checkbox" name="tags[]" id="avi_check_box" value="avi">
+						<label for="avi_check_box">
+							<span class="dd-span red white-text">AVI</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="mp3_check_box" value="mp3">
+						<label for="mp3_check_box">
+							<span class="dd-span pink white-text">mp3</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="flac_check_box" value="flac">
+						<label for="flac_check_box">
+							<span class="dd-span purple white-text">FLAC</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="mkv_check_box" value="mkv">
+						<label for="mkv_check_box">
+							<span class="dd-span deep-purple white-text">MKV</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="bdrip_check_box" value="bdrip">
+						<label for="bdrip_check_box">
+							<span class="dd-span indigo white-text">BDRIP</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="webrip_check_box" value="webrip">
+						<label for="webrip_check_box">
+							<span class="dd-span blue white-text">WEBRIP</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="hdrip_check_box" value="hdrip">
+						<label for="hdrip_check_box">
+							<span class="dd-span light-blue white-text">HDRIP</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="fullhd_check_box" value="fullhd">
+						<label for="fullhd_check_box">
+							<span class="dd-span cyan white-text">FUllHD</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="4k_check_box" value="4k">
+						<label for="4k_check_box">
+							<span class="dd-span teal white-text">4K</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="1080_check_box" value="1080">
+						<label for="1080_check_box">
+							<span class="dd-span green white-text">1080</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="pdf_check_box" value="pdf">
+						<label for="pdf_check_box">
+							<span class="dd-span light-green white-text">pdf</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="epub_check_box" value="epub">
+						<label for="epub_check_box">
+							<span class="dd-span lime white-text">EPUB</span>
+						</label>
+					</li>
 				</ul>
+
 			</div>
-			<div class="ss-block ss-select">
-				<span class="ss-name">Выбор трекера: </span>
-				<select multiple>
-					<option disabled selected>Поиск по всем</option>
-					<option>Option 1</option>
-					<option>Option 2</option>
-					<option>Option 3</option>
-				</select>
+
+			<div class="ss-block tag">
+				
+				<span class="ss-name">Выбор трекера:</span>
+
+				<div class="input-dropper" data-activates='dropdown-dropper-select'>
+					<span class="caret">
+						<i class="material-icons dp48">arrow_drop_down</i>
+					</span>
+					<span class="input-dropper-valuelue" data-val-def="Поиск по всем">Поиск по всем</span>
+				</div>
+
+				<ul id="dropdown-dropper-select" class="dropdown-content">
+					<li>
+						<input type="checkbox" name="tags[]" id="Rutor_check_box" value="Rutor">
+						<label for="Rutor_check_box">
+							<span class="dd-span blue-grey-text">Rutor</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="Rutracker_check_box" value="Rutracker">
+						<label for="Rutracker_check_box">
+							<span class="dd-span blue-grey-text">Rutracker</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="PirateBay_check_box" value="PirateBay">
+						<label for="PirateBay_check_box">
+							<span class="dd-span blue-grey-text">PirateBay</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="LostFilm_check_box" value="LostFilm">
+						<label for="LostFilm_check_box">
+							<span class="dd-span blue-grey-text">LostFilm</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="1337x_check_box" value="1337x">
+						<label for="1337x_check_box">
+							<span class="dd-span blue-grey-text">1337x</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="NNM-Club_check_box" value="NNM-Club">
+						<label for="NNM-Club_check_box">
+							<span class="dd-span blue-grey-text">NNM-Club</span>
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="tags[]" id="all_check_box" value="По всем">
+						<label for="all_check_box">
+							<span class="dd-span blue-grey-text">По всем</span>
+						</label>
+					</li>
+				</ul>
+
 			</div>
+
+
 		</div>
 
 	</form>
